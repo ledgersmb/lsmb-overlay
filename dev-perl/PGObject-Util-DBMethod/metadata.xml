@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>chris.travers@gmail.com</email>
+</maintainer>
+<longdescription lang="en">
+This module provides a declarative syntax for mapping stored procedures to
+object methods.
+</longdescription>
+</pkgmetadata>

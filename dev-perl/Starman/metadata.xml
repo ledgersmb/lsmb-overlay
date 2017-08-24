@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<maintainer type="person">
+<email>chris.travers@gmail.com</email>
+</maintainer>
+<longdescription lang="en">
+Starman is a multi-process, powerful, high performance web server for PSGI
+Perl applications.
+</longdescription>
+</pkgmetadata>
