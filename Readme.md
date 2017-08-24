@@ -1,4 +1,4 @@
-#LedgerSMB Official Project Gentoo Overlay
+# LedgerSMB Official Project Gentoo Overlay
 
 Welcome to the LedgerSMB Gentoo Overlay.  We haven't quite got LedgerSMB
 fully packaged yet, but we have most of the dependencies (using g-cpan as a
