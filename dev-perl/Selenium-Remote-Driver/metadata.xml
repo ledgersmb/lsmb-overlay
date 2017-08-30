@@ -2,7 +2,7 @@
 <!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 <maintainer type="person">
-<email>chris.travers@gmaicom</email>
+<email>chris.travers@gmail.com</email>
 </maintainer>
 <longdescription lang="en">
 A JsonWireProtocol implementation for Perl, to control Selenium.
