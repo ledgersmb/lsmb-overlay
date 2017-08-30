@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="perl-gcpan/Selenium-Remote-Driver
+DEPEND="dev-perl/Selenium-Remote-Driver
 	dev-perl/Moose
-	>=perl-gcpan/Weasel-0.11
+	>=dev-perl/Weasel-0.11
 	dev-lang/perl"

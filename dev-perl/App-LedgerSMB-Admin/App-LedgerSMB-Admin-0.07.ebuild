@@ -17,9 +17,9 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="perl-gcpan/PGObject-Util-DBMethod
-	perl-gcpan/PGObject-Simple-Role
-	perl-gcpan/PGObject-Util-DBAdmin
-	>=perl-gcpan/PGObject-Util-DBChange-0.050.2
+DEPEND="dev-perl/PGObject-Util-DBMethod
+	dev-perl/PGObject-Simple-Role
+	dev-perl/PGObject-Util-DBAdmin
+	>=dev-perl/PGObject-Util-DBChange-0.050.2
 	dev-perl/Test-Exception
 	dev-lang/perl"

@@ -19,5 +19,5 @@ IUSE=""
 
 DEPEND="dev-perl/JSON
 	dev-perl/Carp-Always
-	perl-gcpan/PGObject
+	dev-perl/PGObject
 	dev-lang/perl"

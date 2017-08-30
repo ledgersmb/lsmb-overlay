@@ -21,7 +21,7 @@ DEPEND="dev-perl/HTTP-Message
 	dev-perl/Test-LongString
 	dev-perl/Try-Tiny
 	dev-perl/JSON
-	perl-gcpan/Test-LWP-UserAgent
+	dev-perl/Test-LWP-UserAgent
 	dev-perl/File-Which
 	dev-perl/Test-Fatal
 	dev-perl/Moo

@@ -27,5 +27,5 @@ DEPEND="dev-perl/Test-Requires
 	>=dev-perl/Plack-1.4.300
 	dev-perl/HTTP-Message
 	dev-perl/Data-Dump
-	perl-gcpan/HTTP-Parser-XS
+	dev-perl/HTTP-Parser-XS
 	dev-lang/perl"

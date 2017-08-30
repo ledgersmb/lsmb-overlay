@@ -19,5 +19,5 @@ IUSE=""
 
 DEPEND="dev-perl/DateTime-TimeZone
 	dev-perl/DateTime
-	>=perl-gcpan/PGObject-2.000001
+	>=dev-perl/PGObject-2.000001
 	dev-lang/perl"

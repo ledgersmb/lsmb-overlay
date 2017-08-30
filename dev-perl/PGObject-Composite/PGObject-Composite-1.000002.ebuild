@@ -17,6 +17,6 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=">=perl-gcpan/PGObject-2.000001
-	perl-gcpan/PGObject-Type-Composite
+DEPEND=">=dev-perl/PGObject-2.000001
+	dev-perl/PGObject-Type-Composite
 	dev-lang/perl"

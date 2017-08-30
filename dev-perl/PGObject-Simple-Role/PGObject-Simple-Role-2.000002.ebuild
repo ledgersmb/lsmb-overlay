@@ -17,6 +17,6 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=">=perl-gcpan/PGObject-Simple-3.000002
+DEPEND=">=dev-perl/PGObject-Simple-3.000002
 	dev-perl/Moo
 	dev-lang/perl"

@@ -17,5 +17,5 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="perl-gcpan/Weasel
+DEPEND="dev-perl/Weasel
 	dev-lang/perl"

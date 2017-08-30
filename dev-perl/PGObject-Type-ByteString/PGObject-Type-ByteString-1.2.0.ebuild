@@ -19,5 +19,5 @@ IUSE=""
 
 DEPEND="dev-perl/File-Slurp
 	dev-perl/DBD-Pg
-	>=perl-gcpan/PGObject-2.000001
+	>=dev-perl/PGObject-2.000001
 	dev-lang/perl"

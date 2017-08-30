@@ -17,7 +17,7 @@ SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=">=perl-gcpan/PGObject-Util-PseudoCSV-2
-	perl-gcpan/PGObject-Util-Catalog-Types
+DEPEND=">=dev-perl/PGObject-Util-PseudoCSV-2
+	dev-perl/PGObject-Util-Catalog-Types
 	dev-perl/DBI
 	dev-lang/perl"
