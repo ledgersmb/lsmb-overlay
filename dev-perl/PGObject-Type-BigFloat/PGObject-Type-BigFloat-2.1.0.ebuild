@@ -1,21 +1,19 @@
 # Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=8
 
-MODULE_AUTHOR="EHUELS"
-MODULE_VERSION="0.05"
+DIST_AUTHOR="EHUELS"
+DIST_VERSION="2.001"
 
 inherit perl-module
 
-DESCRIPTION="Weasel driver wrapping Selenium::Remote::Driver"
+DESCRIPTION="Math::BigFloat wrappers for PGObject classes"
 
 LICENSE="|| ( Artistic GPL-1 GPL-2 GPL-3 )"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="dev-perl/Selenium-Remote-Driver
-	dev-perl/Moose
-	>=dev-perl/Weasel-0.11
+DEPEND="dev-perl/PGObject
 	dev-lang/perl"

@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="CWINTERS"
 DIST_VERSION="0.87"
 
-
 inherit perl-module
 
 DESCRIPTION="SPOPS -- Simple Perl Object Persistence with Security"

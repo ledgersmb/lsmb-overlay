@@ -5,7 +5,7 @@
 EAPI=8
 
 DIST_AUTHOR="STRANGE"
-DIST_VERSION="0.34.1"
+DIST_VERSION="v0.34.1"
 
 inherit perl-module
 

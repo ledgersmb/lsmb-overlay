@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="MOZNION"
 DIST_VERSION="0.14"
 
-
 inherit perl-module
 
 DESCRIPTION="Subclass of L<Plack::Request> which supports encoded requests."

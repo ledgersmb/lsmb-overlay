@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="FRACTAL"
 DIST_VERSION="0.321"
 
-
 inherit perl-module
 
 DESCRIPTION="Timing side-channel protected string compare"

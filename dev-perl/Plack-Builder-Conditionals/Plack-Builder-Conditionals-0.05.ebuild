@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="KAZEBURO"
 DIST_VERSION="0.05"
 
-
 inherit perl-module
 
 DESCRIPTION="Plack::Builder extension"

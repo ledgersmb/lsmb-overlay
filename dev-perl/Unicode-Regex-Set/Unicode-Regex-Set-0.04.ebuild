@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="SADAHIRO"
 DIST_VERSION="0.04"
 
-
 inherit perl-module
 
 DESCRIPTION="Subtraction and Intersection of Character Sets in Unicode Regular Expressions"

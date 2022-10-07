@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="DAGOLDEN"
 DIST_VERSION="1.000"
 
-
 inherit perl-module
 
 DESCRIPTION="Encrypted, expiring, compressed, serialized session data with integrity"
@@ -19,12 +18,12 @@ IUSE=""
 
 DEPEND="dev-perl/Sereal-Decoder
 	dev-perl/Crypt-Rijndael
-	perl-gcpan/String-Compare-ConstantTime
+	dev-perl/String-Compare-ConstantTime
 	>=dev-perl/Crypt-CBC-3.40.0
 	dev-perl/Math-Random-ISAAC-XS
 	>=dev-perl/MooX-Types-MooseLike-0.290.0
 	dev-perl/Moo
-	perl-gcpan/Number-Tolerant
+	dev-perl/Number-Tolerant
 	dev-perl/Test-Fatal
 	dev-perl/Test-Deep
 	dev-perl/Crypt-URandom

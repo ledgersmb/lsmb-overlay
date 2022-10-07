@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="JONASBN"
 DIST_VERSION="1.61"
 
-
 inherit perl-module
 
 DESCRIPTION="Data blackboard for Workflows, Actions, Conditions and Validators"
