@@ -5,8 +5,7 @@
 EAPI=8
 
 DIST_AUTHOR="STRANGE"
-DIST_VERSION="0.34.1"
-
+DIST_VERSION="v0.34.1"
 
 inherit perl-module
 
@@ -28,4 +27,5 @@ DEPEND="dev-perl/DateTime-Locale
 	dev-perl/Test-Exception
 	dev-perl/Unicode-Regex-Set
 	dev-perl/List-MoreUtils
-	dev-lang/perl"
+	dev-lang/perl
+	app-i18n/unicode-cldr"

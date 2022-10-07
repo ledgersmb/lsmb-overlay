@@ -1,10 +1,10 @@
 # Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=8
 
-MODULE_AUTHOR="JMGDOC"
-MODULE_VERSION="2.125"
+DIST_AUTHOR="JMGDOC"
+DIST_VERSION="2.125"
 
 inherit perl-module
 

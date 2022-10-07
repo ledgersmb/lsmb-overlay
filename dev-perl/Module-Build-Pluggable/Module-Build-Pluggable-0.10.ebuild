@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="TOKUHIROM"
 DIST_VERSION="0.10"
 
-
 inherit perl-module
 
 DESCRIPTION="Module::Build meets plugins"

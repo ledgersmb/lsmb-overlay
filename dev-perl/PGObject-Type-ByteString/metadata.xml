@@ -4,8 +4,4 @@
 <maintainer type="person">
 <email>chris.travers@gmail.com</email>
 </maintainer>
-<longdescription lang="en">
-ByteString handler for mapping ByteA data from PostgreSQL into a binary stream
-in Perl.
-</longdescription>
 </pkgmetadata>
