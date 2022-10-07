@@ -3,8 +3,5 @@
 <pkgmetadata>
 <maintainer type="person">
 <email>chris.travers@gmail.com</email>
-<longdescription lang="en">
-Routines to test numbers against tolerances
-</longdescription>
 </maintainer>
 </pkgmetadata>
