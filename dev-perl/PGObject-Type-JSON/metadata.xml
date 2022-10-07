@@ -4,8 +4,4 @@
 <maintainer type="person">
 <email>chris.travers@gmail.com</email>
 </maintainer>
-<longdescription lang="en">
-A type mapper which serializes/deserializes data from JSON and JSONB objects in
-PostgreSQL to Perl.
-</longdescription>
 </pkgmetadata>

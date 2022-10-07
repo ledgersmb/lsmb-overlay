@@ -3,8 +3,5 @@
 <pkgmetadata>
 <maintainer type="person">
 <email>chris.travers@gmail.com</email>
-<longdescription lang="en">
-Plack::Request::WithEncoding - Subclass of Plack::Request which supports encoded requests.
-</longdescription>
 </maintainer>
 </pkgmetadata>

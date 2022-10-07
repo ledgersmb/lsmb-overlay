@@ -2,10 +2,6 @@
 <!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
 <pkgmetadata>
 <maintainer type="person">
-<email>chris.travers@gmail,com</email>
-<longdescription lang="en">
-This module makes it trivial to generate random strings.
-
-</longdescription>
+<email>chris.travers@gmail.com</email>
 </maintainer>
 </pkgmetadata>

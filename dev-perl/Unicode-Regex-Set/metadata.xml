@@ -10,5 +10,5 @@ Perl 5.8.0 misses subtraction and intersection of characters, which is described
 The syntax provided by this module is considerably incompatible with the standard Perl's regex syntax.
 
 Any whitespace character (that matches /\s/) is allowed between any tokens. Square brackets ('[' and ']') are used for grouping. A literal whitespace and square brackets must be backslashed (escaped with a backslash, '\'). You cannot put literal ']' at the start of a group.
-<longdescription>
+</longdescription>
 </pkgmetadata>

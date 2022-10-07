@@ -4,8 +4,4 @@
 <maintainer type="person">
 <email>chris.travers@gmail.com</email>
 </maintainer>
-<longdescription lang="en">
-A parser/generator for PostgreSQL's CSV-like serialization format (for arrays
-and composite types).
-</longdescription>
 </pkgmetadata>

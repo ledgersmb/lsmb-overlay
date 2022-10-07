@@ -5,6 +5,9 @@
 <email>chris.travers@gmail.com</email>
 </maintainer>
 <longdescription lang="en">
-Perl support for the CLDR library.
+Perl support for Common Locale Data Repository files from Unicode.org.
+
+This provides translations of names, date formats, and other useful 
+locale-related features.
 </longdescription>
 </pkgmetadata>
