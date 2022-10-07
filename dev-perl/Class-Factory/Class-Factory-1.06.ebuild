@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="PHRED"
 DIST_VERSION="1.06"
 
-
 inherit perl-module
 
 DESCRIPTION="Base class for dynamic factory classes"

@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="JMCNAMARA"
 DIST_VERSION="1.09"
 
-
 inherit perl-module
 
 DESCRIPTION="Create a new file in the Excel 2007+ XLSX format."

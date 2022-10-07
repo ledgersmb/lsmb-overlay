@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="TOBYINK"
 DIST_VERSION="0.011"
 
-
 inherit perl-module
 
 DESCRIPTION="declare class attributes Moose-style... but without Moose"

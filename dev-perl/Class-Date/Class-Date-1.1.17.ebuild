@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="YANICK"
 DIST_VERSION="1.1.17"
 
-
 inherit perl-module
 
 DESCRIPTION="Class for easy date and time manipulation"

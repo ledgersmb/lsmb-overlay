@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="JBERGER"
 DIST_VERSION="1.02"
 
-
 inherit perl-module
 
 DESCRIPTION="Monkey patching with test mocking in mind"

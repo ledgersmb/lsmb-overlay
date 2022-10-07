@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="TOKUHIROM"
 DIST_VERSION="0.04"
 
-
 inherit perl-module
 
 DESCRIPTION="Generate ppport.h"

@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="MSCHWERN"
 DIST_VERSION="0.204"
 
-
 inherit perl-module
 
 DESCRIPTION="Inspect the fields of a class."

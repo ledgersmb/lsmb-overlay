@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="JLCOOPER"
 DIST_VERSION="1.59"
 
-
 inherit perl-module
 
 DESCRIPTION="Mock database driver for testing"

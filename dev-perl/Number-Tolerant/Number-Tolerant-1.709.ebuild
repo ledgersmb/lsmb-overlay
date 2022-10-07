@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="RJBS"
 DIST_VERSION="1.709"
 
-
 inherit perl-module
 
 DESCRIPTION="test routines for testing numbers against tolerances"

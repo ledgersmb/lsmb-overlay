@@ -7,7 +7,6 @@ EAPI=8
 DIST_AUTHOR="PEVANS"
 DIST_VERSION="0.05"
 
-
 inherit perl-module
 
 DESCRIPTION="C<Feature::Compat::Try> - make C<try/catch> syntax available"
