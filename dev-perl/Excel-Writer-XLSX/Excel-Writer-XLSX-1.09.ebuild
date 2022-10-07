@@ -4,19 +4,18 @@
 
 EAPI=8
 
-DIST_AUTHOR="TOMMY"
-DIST_VERSION="4.201720"
+DIST_AUTHOR="JMCNAMARA"
+DIST_VERSION="1.09"
+
 
 inherit perl-module
 
-DESCRIPTION="Easy, versatile, portable file handling"
+DESCRIPTION="Create a new file in the Excel 2007+ XLSX format."
 
 LICENSE="|| ( Artistic GPL-1 GPL-2 GPL-3 )"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND=">=dev-perl/Unicode-UTF8-0.620.0
-	dev-perl/Module-Build
-	dev-perl/Test-NoWarnings
+DEPEND=">=dev-perl/Archive-Zip-1.680.0
 	dev-lang/perl"

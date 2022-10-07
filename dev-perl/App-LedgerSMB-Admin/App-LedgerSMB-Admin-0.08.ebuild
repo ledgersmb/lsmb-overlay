@@ -1,21 +1,23 @@
 # Copyright 1999-2016 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=5
+EAPI=8
 
-MODULE_AUTHOR="EINHVERFR"
-MODULE_VERSION="2.000001"
+DIST_AUTHOR="EHUELS"
+DIST_VERSION="0.08"
 
 inherit perl-module
 
-DESCRIPTION="A toolkit integrating intelligent PostgreSQL dbs into Perl objects"
+DESCRIPTION="Easily Manage LedgerSMB Installations"
 
 LICENSE="|| ( Artistic GPL-1 GPL-2 GPL-3 )"
 SLOT="0"
 KEYWORDS="~amd64"
 IUSE=""
 
-DEPEND="dev-perl/Try-Tiny
+DEPEND="dev-perl/PGObject-Util-DBMethod
+	dev-perl/PGObject-Simple-Role
+	dev-perl/PGObject-Util-DBAdmin
+	>=dev-perl/PGObject-Util-DBChange-0.050.2
 	dev-perl/Test-Exception
-	dev-perl/DBD-Pg
 	dev-lang/perl"
