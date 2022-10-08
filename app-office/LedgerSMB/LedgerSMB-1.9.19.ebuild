@@ -62,7 +62,7 @@ dev-perl/MooseX-ClassAttribute
 dev-perl/MooseX-NonMoose
 dev-perl/Number-Format
 >=dev-perl/PGObject-2.2.0
->=PGObject::Simple-3.0.2
+>=dev-perl/PGObject-Simple-3.0.2
 >=dev-perl/PGObject-Simple-Role-2.0.2
 >=dev-perl/PGObject-Type-BigFloat-2.0.1
 >=dev-perl/PGObject-Type-DateTime-2.0.2
@@ -82,7 +82,7 @@ dev-perl/Text-CSV
 dev-perl/Text-Markdown
 dev-perl/URI
 dev-perl/Version-Compare
->=Workflow-1.56
+>=dev-perl/Workflow-1.56
 dev-perl/XML-LibXML
 dev-perl/YAML
 dev-perl/namespace-autoclean
@@ -93,12 +93,12 @@ edi? (
      dev-perl/Path-Class
 	 )
 latex? ( 
-       >=dev-perl/LaTeX-Driver-1.0.0 )
+       >=dev-perl/LaTeX-Driver-1.0.0 
        >=dev-perl/Template-Plugin-Latex-3.08 
 	   app-text/texlive[extra]
 	   )
-xatex? ( 
-       >=dev-perl/LaTeX-Driver-1.0.0 )
+xetex? ( 
+       >=dev-perl/LaTeX-Driver-1.0.0 
        >=dev-perl/Template-Plugin-Latex-3.08 
 	   app-text/texlive[extra,xetex]
 	   )
@@ -113,13 +113,15 @@ PATCHES=(
 	"${FILESDIR}/ledgersmb-1.9-openrc.patch"
 )
 
-DEPEND="${RDEPEND}"
+#DEPEND="${RDEPEND}"
 
 src_configure() {
+   false
 }
 
 # No compilation needed
 src_compile() {
+   false
 }
 
 src_install() {
