@@ -128,17 +128,20 @@ src_install() {
     dodir /usr/share/ledgersmb-1.9
 	for a in UI bin doc lib locale old package* sql templates utils workflows webpack.config.js
 	do
-	    echo cp -R ${S}/$a ${D}/ 
-	    cp -R ${S}/$a ${D}/  || die "Install Failed"
+	    echo cp -R ${S}/$a ${D}/usr/share/ledgersmb-1.9
+	    cp -R ${S}/$a ${D}/usr/share/ledgersmb-1.9  || die "Install Failed"
 	done
     if ((use systemd))
 	   then
 	   insinto /etc/systemd/system/
-	   doins /doc/config/systemd/ledgersmb_starman.service
+	   doins /doc/conf/systemd/ledgersmb_starman.service
 	else
 	   insinto /etc/init.d
-	   doins doc/config/openrc/init.d/ledgersmb
-	   newconfd doc/config/openrc/conf.d/ledgersmb
+	   chown root:root "${S}"/doc/conf/openrc/ledgersmb_starman
+	   chmod 744 "${S}"/doc/conf/openrc/ledgersmb_starman
+	   doins "${S}"/doc/conf/openrc/ledgersmb_starman
+	   chmod 744 "${D}"/etc/init.d/ledgersmb_starman
+	   doconfd "${S}"/doc/conf/openrc/conf.d/ledgersmb_starman
 	fi
 
 	# You must *personally verify* that this trick doesn't install
