@@ -9,7 +9,7 @@ HOMEPAGE="https://ledgersmb.org/"
 
 SRC_URI="https://download.ledgersmb.org/f/Releases/${PV}/${PN}-${PV}.tar.gz"
 
-#S="${WORKDIR}/${P}"
+S="${WORKDIR}/${PN}"
 
 LICENSE="GPL-2"
 
@@ -125,9 +125,21 @@ src_compile() {
 }
 
 src_install() {
-    cp -R UI bin doc lib locale old package* sql templates utils workflows webpack.config.js "${D}"/usr/share/LedgerSMB_1.9
-    use 'systemd' && cp doc/config/systemd/ledgersmb_starman.service "${D}"/etc/systemd/system/ledgersmb-starman.service
-	!use 'systemd' && cp -R doc/config/openrc/* "${D}"/etc/
+    dodir /usr/share/ledgersmb-1.9
+	for a in UI bin doc lib locale old package* sql templates utils workflows webpack.config.js
+	do
+	    echo cp -R ${S}/$a ${D}/ 
+	    cp -R ${S}/$a ${D}/  || die "Install Failed"
+	done
+    if ((use systemd))
+	   then
+	   insinto /etc/systemd/system/
+	   doins /doc/config/systemd/ledgersmb_starman.service
+	else
+	   insinto /etc/init.d
+	   doins doc/config/openrc/init.d/ledgersmb
+	   newconfd doc/config/openrc/conf.d/ledgersmb
+	fi
 
 	# You must *personally verify* that this trick doesn't install
 	# anything outside of DESTDIR; do this by reading and
