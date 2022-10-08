@@ -1,0 +1,45 @@
+diff --git a/doc/conf/openrc/conf.d/ledgersmb_starman b/doc/conf/openrc/conf.d/ledgersmb_starman
+new file mode 100644
+index 000000000..79d085bc5
+--- /dev/null
++++ b/doc/conf/openrc/conf.d/ledgersmb_starman
+@@ -0,0 +1,5 @@
++# Startup configuration for LedgerSMB on Starman
++
++host=localhost
++port=5762
++starman_args=--preload_app
+diff --git a/doc/conf/openrc/ledgersmb_starman b/doc/conf/openrc/ledgersmb_starman
+new file mode 100644
+index 000000000..74cfe6763
+--- /dev/null
++++ b/doc/conf/openrc/ledgersmb_starman
+@@ -0,0 +1,28 @@
++#!/sbin/openrc-run
++# Copyright 2022 Gentoo Authors
++# Distributed under the terms of the GNU General Public License v2
++
++name="ledgersmb daemon, running via starman"
++description=""
++command=/usr/bin/starman 
++command_args="${ledgersmb_args}"
++working_dir=/usr/share/ledgersmb-1.9
++ssd=/sbin/start-stop-daemon
++pidfile=/var/run/ledgersmb-1.9
++
++depend() {
++   need net
++}
++
++start() {
++  $ssd -d $working_dir -c ledgersmb:ledgersmb -b -S $starman -- \
++       ${starman_args} \
++       -I old \
++       -I lib \
++       --listen ${host}:{$port}\
++       bin/ledgersmb-server.psgi 
++}
++
++
++
++
