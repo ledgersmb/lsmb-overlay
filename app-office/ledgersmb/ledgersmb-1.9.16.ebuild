@@ -7,7 +7,7 @@ DESCRIPTION="An Accounting Application for Small to Midsized Businesses"
 
 HOMEPAGE="https://ledgersmb.org/"
 
-SRC_URI="https://download.ledgersmb.org/${V}/${P}.tar.gz"
+SRC_URI="https://download.ledgersmb.org/f/Releases/${PV}/${PN}-${PV}.tar.gz"
 
 #S="${WORKDIR}/${P}"
 
