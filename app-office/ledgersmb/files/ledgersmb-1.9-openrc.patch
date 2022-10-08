@@ -13,7 +13,7 @@ diff --git a/doc/conf/openrc/ledgersmb_starman b/doc/conf/openrc/ledgersmb_starm
 new file mode 100644
 index 000000000..74cfe6763
 --- /dev/null
-+++ b/doc/conf/openrc/ledgersmb_starman
++++ b/doc/conf/openrc/init.d/ledgersmb_starman
 @@ -0,0 +1,28 @@
 +#!/sbin/openrc-run
 +# Copyright 2022 Gentoo Authors
