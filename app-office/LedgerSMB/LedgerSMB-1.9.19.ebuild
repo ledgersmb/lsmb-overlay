@@ -87,7 +87,7 @@ dev-perl/XML-LibXML
 dev-perl/YAML
 dev-perl/namespace-autoclean
 dev-perl/Math-BigInt-GMP
-starman? ( dev-perl/starman )
+starman? ( dev-perl/Starman )
 edi? ( 
      dev-perl/X12 
      dev-perl/Path-Class
