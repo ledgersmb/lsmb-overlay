@@ -45,7 +45,7 @@ dev-perl/HTML-Parser
 dev-perl/HTML-Escape
 dev-perl/HTTP-AcceptLanguage
 dev-perl/HTTP-Headers-Fast
-dev-perl/Http-Negotiate
+dev-perl/HTTP-Negotiate
 dev-perl/HTTP-Message
 dev-perl/IO-stringy
 dev-perl/JSON-MaybeXS
