@@ -130,9 +130,9 @@ src_install() {
 	   exeinto  /etc/init.d
 	   chown root:root "${S}"/doc/conf/openrc/ledgersmb_starman
 	   chmod 744 "${S}"/doc/conf/openrc/init.d/ledgersmb_starman
-	   doexe "${S}"/doc/conf/openrc/init.d/ledgersmb_starman
-	   chmod 744 "${D}"/etc/init.d/ledgersmb_starman
-	   doconfd "${S}"/doc/conf/openrc/conf.d/ledgersmb_starman
+	   newexe "${S}"/doc/conf/openrc/init.d/ledgersmb_starman ledgersmb_19
+	   chmod 744 "${D}"/etc/init.d/ledgersmb_19
+	   newconfd "${S}"/doc/conf/openrc/conf.d/ledgersmb_starman ledgersmb_19
 	fi
 	dodoc -r "${S}"/doc
 
