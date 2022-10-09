@@ -137,9 +137,9 @@ src_install() {
 	   chown ledgersmb:ledgersmb "${D}"/var/log/ledgersmb
 	   chown root:root "${S}"/doc/conf/openrc/ledgersmb_starman
 	   chmod 744 "${S}"/doc/conf/openrc/init.d/ledgersmb_starman
-	   newexe "${S}"/doc/conf/openrc/init.d/ledgersmb_starman ledgersmb_19
-	   chmod 744 "${D}"/etc/init.d/ledgersmb_19
-	   newconfd "${S}"/doc/conf/openrc/conf.d/ledgersmb_starman ledgersmb_19
+	   newexe "${S}"/doc/conf/openrc/init.d/ledgersmb_starman ledgersmb_1_10
+	   chmod 744 "${D}"/etc/init.d/ledgersmb_1_10
+	   newconfd "${S}"/doc/conf/openrc/conf.d/ledgersmb_starman ledgersmb_1_10
 	fi
 	dodoc -r "${S}"/doc
 
