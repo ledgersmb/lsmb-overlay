@@ -13,7 +13,7 @@ S="${WORKDIR}/${PN}"
 
 LICENSE="GPL-2"
 
-SLOT="1/10"
+SLOT="2"
 
 KEYWORDS="~amd64"
 
