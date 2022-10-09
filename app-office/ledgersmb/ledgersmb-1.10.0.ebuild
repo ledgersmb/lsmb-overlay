@@ -13,7 +13,7 @@ S="${WORKDIR}/${PN}"
 
 LICENSE="GPL-2"
 
-SLOT="1"
+SLOT="2"
 
 KEYWORDS="~amd64"
 
@@ -21,8 +21,10 @@ IUSE="systemd edi excel openoffice latex xetex starman"
 
 RDEPEND="acct-group/ledgersmb
 acct-user/ledgersmb
->=dev-lang/perl-5.24
+>=dev-lang/perl-5.32
 dev-db/postgresql:=
+dev-perl/Archive-Zip
+dev-perl/Beam-Wire
 dev-perl/Authen-SASL
 dev-perl/CGI-Emulate-PSGI
 dev-perl/Config-IniFiles
@@ -41,13 +43,17 @@ dev-perl/File-Find-Rule
 dev-perl/Hash-Merge
 dev-perl/HTML-Parser
 dev-perl/HTML-Escape
+dev-perl/HTTP-AcceptLanguage
 dev-perl/HTTP-Headers-Fast
+dev-perl/HTTP-Negotiate
 dev-perl/HTTP-Message
 dev-perl/IO-stringy
 dev-perl/JSON-MaybeXS
+dev-perl/JSONSchema-Validator
 dev-perl/Cpanel-JSON-XS
 dev-perl/List-MoreUtils
 dev-perl/Locale-CLDR
+dev-perl/Locales
 >=dev-perl/Locale-Maketext-Lexicon-0.62
 dev-perl/Log-Any
 dev-perl/Log-Any-Adapter-Log4perl
@@ -61,14 +67,14 @@ dev-perl/Moose
 dev-perl/MooseX-ClassAttribute
 dev-perl/MooseX-NonMoose
 dev-perl/Number-Format
->=dev-perl/PGObject-2.2.0
->=dev-perl/PGObject-Simple-3.0.2
->=dev-perl/PGObject-Simple-Role-2.0.2
+>=dev-perl/PGObject-2.3.2
+>=dev-perl/PGObject-Simple-3.1.0
+>=dev-perl/PGObject-Simple-Role-2.1.1
 >=dev-perl/PGObject-Type-BigFloat-2.0.1
 >=dev-perl/PGObject-Type-DateTime-2.0.2
 >=dev-perl/PGObject-Type-ByteString-1.2.3
 dev-perl/PGObject-Util-DBMethod
->=dev-perl/PGObject-Util-DBAdmin-1.4.0
+>=dev-perl/PGObject-Util-DBAdmin-1.6.1
 >=dev-perl/Plack-1.0031
 dev-perl/Plack-Builder-Conditionals
 dev-perl/Plack-Middleware-ReverseProxy
@@ -81,10 +87,9 @@ dev-perl/String-Random
 dev-perl/Text-CSV
 dev-perl/Text-Markdown
 dev-perl/URI
-dev-perl/Version-Compare
 >=dev-perl/Workflow-1.56
 dev-perl/XML-LibXML
-dev-perl/YAML
+dev-perl/YAML-PP
 dev-perl/namespace-autoclean
 dev-perl/Math-BigInt-GMP
 starman? ( dev-perl/Starman )
@@ -110,17 +115,17 @@ excel? (
 
 PATCHES=(
     "${FILESDIR}/ledgersmb-1.9-systemd.patch"
-	"${FILESDIR}/ledgersmb-1.9-openrc.patch"
+	"${FILESDIR}/ledgersmb-1.10-openrc.patch"
 )
 
 #DEPEND="${RDEPEND}"
 
 src_install() {
-    dodir /usr/share/ledgersmb-1.9
+    dodir /usr/share/ledgersmb-1.10
 	for a in UI bin doc lib locale old package* sql templates utils workflows webpack.config.js
 	do
-	    echo cp -R ${S}/$a ${D}/usr/share/ledgersmb-1.9
-	    cp -R ${S}/$a ${D}/usr/share/ledgersmb-1.9  || die "Install Failed"
+	    echo cp -R ${S}/$a ${D}/usr/share/ledgersmb-1.10
+	    cp -R ${S}/$a ${D}/usr/share/ledgersmb-1.10  || die "Install Failed"
 	done
     if ((use systemd))
 	   then
@@ -132,9 +137,9 @@ src_install() {
 	   chown ledgersmb:ledgersmb "${D}"/var/log/ledgersmb
 	   chown root:root "${S}"/doc/conf/openrc/ledgersmb_starman
 	   chmod 744 "${S}"/doc/conf/openrc/init.d/ledgersmb_starman
-	   newexe "${S}"/doc/conf/openrc/init.d/ledgersmb_starman ledgersmb_19
-	   chmod 744 "${D}"/etc/init.d/ledgersmb_19
-	   newconfd "${S}"/doc/conf/openrc/conf.d/ledgersmb_starman ledgersmb_19
+	   newexe "${S}"/doc/conf/openrc/init.d/ledgersmb_starman ledgersmb_1_10
+	   chmod 744 "${D}"/etc/init.d/ledgersmb_1_10
+	   newconfd "${S}"/doc/conf/openrc/conf.d/ledgersmb_starman ledgersmb_1_10
 	fi
 	dodoc -r "${S}"/doc
 
