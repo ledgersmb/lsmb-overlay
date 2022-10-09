@@ -115,15 +115,6 @@ PATCHES=(
 
 #DEPEND="${RDEPEND}"
 
-src_configure() {
-   false
-}
-
-# No compilation needed
-src_compile() {
-   false
-}
-
 src_install() {
     dodir /usr/share/ledgersmb-1.9
 	for a in UI bin doc lib locale old package* sql templates utils workflows webpack.config.js
@@ -136,35 +127,13 @@ src_install() {
 	   insinto /etc/systemd/system/
 	   doins /doc/conf/systemd/ledgersmb_starman.service
 	else
-	   insinto /etc/init.d
+	   exeinto  /etc/init.d
 	   chown root:root "${S}"/doc/conf/openrc/ledgersmb_starman
-	   chmod 744 "${S}"/doc/conf/openrc/ledgersmb_starman
-	   doins "${S}"/doc/conf/openrc/ledgersmb_starman
+	   chmod 744 "${S}"/doc/conf/openrc/init.d/ledgersmb_starman
+	   doexe "${S}"/doc/conf/openrc/init.d/ledgersmb_starman
 	   chmod 744 "${D}"/etc/init.d/ledgersmb_starman
 	   doconfd "${S}"/doc/conf/openrc/conf.d/ledgersmb_starman
 	fi
+	dodoc -r "${S}"/doc
 
-	# You must *personally verify* that this trick doesn't install
-	# anything outside of DESTDIR; do this by reading and
-	# understanding the install part of the Makefiles.
-	# This is the preferred way to install.
-	#emake DESTDIR="${D}" install
-
-	# When you hit a failure with emake, do not just use make. It is
-	# better to fix the Makefiles to allow proper parallelization.
-	# If you fail with that, use "emake -j1", it's still better than make.
-
-	# For Makefiles that don't make proper use of DESTDIR, setting
-	# prefix is often an alternative.  However if you do this, then
-	# you also need to specify mandir and infodir, since they were
-	# passed to ./configure as absolute paths (overriding the prefix
-	# setting).
-	#emake \
-	#	prefix="${D}"/usr \
-	#	mandir="${D}"/usr/share/man \
-	#	infodir="${D}"/usr/share/info \
-	#	libdir="${D}"/usr/$(get_libdir) \
-	#	install
-	# Again, verify the Makefiles!  We don't want anything falling
-	# outside of ${D}.
 }
