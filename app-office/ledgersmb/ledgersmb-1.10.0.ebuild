@@ -115,7 +115,7 @@ excel? (
 
 PATCHES=(
     "${FILESDIR}/ledgersmb-1.9-systemd.patch"
-	"${FILESDIR}/ledgersmb-1.9-openrc.patch"
+	"${FILESDIR}/ledgersmb-1.10-openrc.patch"
 )
 
 #DEPEND="${RDEPEND}"
