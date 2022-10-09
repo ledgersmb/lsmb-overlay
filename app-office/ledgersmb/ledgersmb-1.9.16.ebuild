@@ -125,9 +125,11 @@ src_install() {
     if ((use systemd))
 	   then
 	   insinto /etc/systemd/system/
-	   doins /doc/conf/systemd/ledgersmb_starman.service
+	   newins /doc/conf/systemd/ledgersmb_starman.service ledgersmb_19.service
 	else
 	   exeinto  /etc/init.d
+	   dodir /var/log/ledgersmb
+	   chown ledgersmb:ledgersmb "${D}"/var/log/ledgersmb
 	   chown root:root "${S}"/doc/conf/openrc/ledgersmb_starman
 	   chmod 744 "${S}"/doc/conf/openrc/init.d/ledgersmb_starman
 	   newexe "${S}"/doc/conf/openrc/init.d/ledgersmb_starman ledgersmb_19
