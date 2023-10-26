@@ -18,7 +18,7 @@ RDEPEND="dev-perl/Moo
 	dev-perl/Sub-Quote
 	dev-perl/URI
 	dev-perl/HTTP-Tiny
-	dev-perl/Types-Standard
+	dev-perl/Type-Tiny
 	dev-perl/AnyEvent
 	dev-perl/AnyEvent-HTTP
 	dev-perl/JSON
