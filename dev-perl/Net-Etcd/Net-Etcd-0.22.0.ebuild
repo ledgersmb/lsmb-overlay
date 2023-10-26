@@ -8,7 +8,7 @@ DIST_VERSION="0.022"
 
 inherit perl-module
 
-DESCRIPTION="Plack::Handler::Starman - Plack adapter for Starman"
+DESCRIPTION="Net::Etcd is object oriented interface to the v3 REST API."
 
 SLOT="0"
 KEYWORDS="~amd64"
