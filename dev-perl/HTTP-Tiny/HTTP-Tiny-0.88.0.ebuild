@@ -13,9 +13,8 @@ DESCRIPTION="HTTP::Tiny -- A Simple HTTP Client for Perl"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND="dev-perl/IO-Socket
+RDEPEND="
 	dev-perl/Mime-Base64
-	dev-perl/Socket
 	dev-perl/Time-Local"
 
 BDEPEND="${RDEPEND}
