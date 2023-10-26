@@ -25,7 +25,6 @@ RDEPEND="dev-perl/Moo
 	dev-perl/Math-Int64"
 
 BDEPEND="${RDEPEND}
-	perl-core/File-Spec
 	perl-core/File-Temp
 	test? (
 		dev-perl/Test-More
