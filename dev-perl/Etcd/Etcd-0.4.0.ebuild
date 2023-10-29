@@ -17,7 +17,7 @@ RDEPEND="dev-perl/HTTP-Tiny
 	dev-perl/JSON
 	dev-perl/Try-Tiny
 	dev-perl/Type-Tiny
-	dev-perl/URI-Escape"
+	dev-perl/URI"
 
 BDEPEND="${RDEPEND}
 	"
