@@ -3,8 +3,7 @@
 
 EAPI=8
 
-DIST_AUTHOR="EHUELS"
-DIST_VERSION="2.000002"
+DIST_AUTHOR="EINHVERFR"
 
 inherit perl-module
 
