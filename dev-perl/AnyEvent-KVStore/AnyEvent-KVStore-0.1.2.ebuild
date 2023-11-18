@@ -13,7 +13,7 @@ LICENSE="BSD-2"
 SLOT="0"
 KEYWORDS="~amd64"
 
-RDEPEND="dev-perl/Parse-RecDescent
+RDEPEND="
 	dev-perl/Type-Tiny
 	dev-perl/Moo
 	dev-perl/namespace-autoclean
